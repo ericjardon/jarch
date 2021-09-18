@@ -95,6 +95,16 @@ html {
   border: 5px solid var(--color-grey);
 }
 
+.test {
+  border-radius: 50%;
+  border: 6px solid var(--color-light);
+  background-image: url('./img/profile.jpg');
+  background-size: cover;
+}
+.test:hover {
+  border: 6px solid var(--color-black);
+}
+
 
 /*--- Nav bar Links ---*/
 #nav-bar-links {
