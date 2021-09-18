@@ -1,0 +1,5 @@
+- Fix profile icon border
+- Finish nav bar links: on hover, accent colored
+- Router setup `npm install --save npm react-router-dom`
+- Create language copy files
+- React Context:

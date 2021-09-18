@@ -1,38 +1,115 @@
+:root {
+  --color-black: #171717;
+  --color-grey: #444444;
+  --color-light: #ededed;
+  --color-accent: #da0037;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-container {
+  background-color: var(--color-black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-black);
 }
 
-.App-link {
-  color: #61dafb;
+.centeredFlex {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  color: var(--color-grey);
+  font-weight:bold;
+  font-size: 22px;
+  margin: 0;
+}
+
+
+/*--- Main Container ---*/
+.main-container {
+  background-color: var(--color-light);
+  min-height: 100vh;
+  min-width: 800px;
+}
+
+.main-container p {
+  color:var(--color-black);
+}
+
+/*--- Navigation Bar ---*/
+#navbar {
+  width:100%;
+  height: auto;
+}
+
+#navbar .h3 {
+  color: var(--color-grey)
+}
+
+#navbarcontent {
+  height: 100%;
+  margin: 0px 45px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #171717;
+}
+
+#profile-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:auto;
+}
+
+#profile-circle {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border: 5px solid var(--color-light);
+}
+
+#profile-img {
+  max-width:175px;
+  margin-left: -5px;
+  margin-bottom: -8px;
+}
+
+#profile-circle:hover {
+  border: 5px solid var(--color-grey);
+}
+
+
+/*--- Nav bar Links ---*/
+#nav-bar-links {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px
+}
+.nav-links {
+  font-size: 18px;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
 }
