@@ -8,6 +8,9 @@ export default function NavBar() {
             <div id="navbarcontent">
                 <NavLinks />
                 <div id="profile-block">
+                    <div className="test">
+
+                    </div>
                     <div id="profile-circle" className="centeredFlex">
                         <img id="profile-img" src={img} alt="Profile" />
                     </div>
