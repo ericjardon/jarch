@@ -1,3 +1,4 @@
 - Start media queries for responsiveness
+- fix 100vh
 - Create language copy files
 - React Context: retake tutorial
