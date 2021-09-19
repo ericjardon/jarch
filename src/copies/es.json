@@ -1,0 +1,11 @@
+{
+    "bio": "",
+    "projects": [
+        {
+            "geeb": "an online platform for finding ideal collaborators and forming multidisciplinary teams"
+        },
+        {
+            "socrates": "a mobile-based prototype for a remte voting system that is verifiable, scalable, and secure"
+        }
+    ]
+}

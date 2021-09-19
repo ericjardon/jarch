@@ -1,6 +1,5 @@
-import React from 'react'
-import img from '../img/profile.jpg'
 import NavLinks from './NavLinks'
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
     return (
@@ -8,14 +7,12 @@ export default function NavBar() {
             <div id="navbarcontent">
                 <NavLinks />
                 <div id="profile-block">
-                    <div className="test">
+                    <div className="profile-img">
 
-                    </div>
-                    <div id="profile-circle" className="centeredFlex">
-                        <img id="profile-img" src={img} alt="Profile" />
                     </div>
                 </div>
                 <p className="title">eric chao</p>
+                <hr id="header-line"/>
             </div>
         </header>
     )

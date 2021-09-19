@@ -8,7 +8,23 @@
 html {
   overflow-x: hidden;
   box-sizing: border-box;
-  margin: 0;
+}
+
+body {
+  background-color: var(--color-black);
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
 
 .App {
@@ -16,7 +32,8 @@ html {
 }
 
 .App-container {
-  background-color: var(--color-black);
+  text-align: center;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -66,7 +83,6 @@ html {
   height: 100%;
   margin: 0px 45px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #171717;
 }
 
 #profile-block {
@@ -77,34 +93,23 @@ html {
   height:auto;
 }
 
-#profile-circle {
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
-  border: 5px solid var(--color-light);
-}
-
-#profile-img {
-  max-width:175px;
-  margin-left: -5px;
-  margin-bottom: -8px;
-}
-
-#profile-circle:hover {
-  border: 5px solid var(--color-grey);
-}
-
-.test {
+.profile-img {
   border-radius: 50%;
   border: 6px solid var(--color-light);
   background-image: url('./img/profile.jpg');
   background-size: cover;
+  height: 140px;
+  width: 140px;
 }
-.test:hover {
-  border: 6px solid var(--color-black);
+.profile-img:hover {
+  border: 6px solid var(--color-grey);
 }
 
+#header-line {
+  border: 2px solid var(--color-black);
+  width: 240px;
+  margin: 20px auto;
+}
 
 /*--- Nav bar Links ---*/
 #nav-bar-links {
@@ -112,14 +117,41 @@ html {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding-left: 45px;
-  padding-right: 45px
+  padding: 20px 0 25px 0;
 }
+
 .nav-links {
-  font-size: 18px;
+  font-size: 22px;
   display: flex;
   padding: 0;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+}
+
+a.nav-link {
+  color: #979797;
+}
+
+a.nav-link:hover {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+a.nav-link::before {
+  display: block;
+  content: attr(title);
+  font-weight: 500;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+/*=============RESPONSIVE============*/
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
 }
