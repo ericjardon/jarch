@@ -62,7 +62,7 @@ a:active {
 .main-container {
   background-color: var(--color-light);
   min-height: 100vh;
-  min-width: 800px;
+  width: 800px;
 }
 
 .main-container p {
@@ -147,9 +147,53 @@ a.nav-link::before {
   visibility: hidden;
 }
 
+/*---Nav Menu ---*/
+#nav-menu-container {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#nav-menu-span {
+  width: 80px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-menu {
+  height: 7em; /*unit should be related to number of pages*/
+  overflow: visible;
+  transition: all 0.3s ease-out;
+}
+
+.closed {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.menu-arrow {
+  margin-top: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.rotate {
+  transition: all 0.3s ease-out;
+  transform: rotate(90deg);
+  margin-top: 0;
+  margin-left: 2px;
+}
+
 
 /*=============RESPONSIVE============*/
 
 @media only screen and (max-width: 768px) {
-  
+  .App-container {
+    width:100vw;
+  }
+
+  .main-container {
+    width:100%;
+  }
 }
