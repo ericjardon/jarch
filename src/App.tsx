@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import MainContainer from './components/MainContainer';
+import Main from './components/Main';
 
 const App = () => {
 
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
       <div className="App-container">
-        <MainContainer />
+        <Main />
       </div>
   );
 }

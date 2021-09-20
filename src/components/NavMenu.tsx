@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FaAngleRight } from 'react-icons/fa'
 import { GoTriangleRight } from 'react-icons/go'
+import { NavBarProps } from '../interfaces';
 
-export default function NavMenu(props: any) {
+export default function NavMenu(props: NavBarProps) {
 
     const { pathname } = useLocation();
     const [isOpen, setIsOpen] = useState(false);
 
-    const pages = ['home', 'about', 'works', 'blog', 'stuff'];
+    const {pages} = props;
 
     const toggleMenu = () => {
         document.getElementById("nav-menu")?.classList.toggle('closed');
@@ -24,7 +25,7 @@ export default function NavMenu(props: any) {
         closeMenu();
     }
 
-    const title = pathname.slice(1) || "home"
+    const title = pathname.split('/')[2] || "home"
 
     useEffect(() => {
         closeMenu();
@@ -38,7 +39,7 @@ export default function NavMenu(props: any) {
 
             <div id="nav-menu" className="nav-menu">
                 {pages.map((page, index) => <Link key={index} title={page} className="navmenu-link" onClick={() => handleClick(page)}
-                    to={`/${page}`}>{page}</Link>)}
+                    to={`/jarch/${page}`}>{page}</Link>)}
             </div>
         </div>
     )

@@ -2,22 +2,22 @@ import NavLinks from './NavLinks'
 import NavMenu from './NavMenu'
 import { Link } from 'react-router-dom'
 import { useMediaSize } from "use-media-size";
+import {NavBarProps} from '../interfaces'
 
-export default function NavBar() {
+export default function NavBar(props: NavBarProps) {
 
+    const {pages} = props;
     const {isMd} = useMediaSize();
-
-    console.log("is mobile?", isMd)
 
     return (
         <header id="navbar">
             <div id="navbarcontent">
                 {!isMd && (
-                    <NavLinks />
+                    <NavLinks pages={pages}/>
                 )}
 
                 {isMd && (
-                    <NavMenu />
+                    <NavMenu pages={pages}/>
                 )}
 
                 <div id="profile-block">

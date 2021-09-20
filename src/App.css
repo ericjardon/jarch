@@ -68,11 +68,10 @@ a:active {
   background-color: var(--color-light);
   min-height: 100vh;
   width: 800px;
+  color:var(--color-black);
+
 }
 
-.main-container p {
-  color:var(--color-black);
-}
 
 /*--- Navigation Bar ---*/
 #navbar {
@@ -114,6 +113,11 @@ a:active {
   border: 2px solid var(--color-black);
   width: 240px;
   margin: 20px auto;
+
+}
+
+.selected {
+  font-weight: 500;
 }
 
 /*--- Nav bar Links ---*/

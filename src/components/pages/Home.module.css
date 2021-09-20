@@ -1,0 +1,20 @@
+.container {
+    padding: 0 70px;
+}
+
+.heading {
+    font-size: 24px;
+}
+
+p.home {
+    margin: 25px 0;
+}
+b.home {
+    color: var(--color-accent);
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 22px;
+    }
+}
