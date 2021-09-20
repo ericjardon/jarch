@@ -1,4 +1,6 @@
-- Start media queries for responsiveness
-- fix 100vh
+- Start english page json for home
+- project presentation card component
+- add spinner icon for Suspense
+- Add typing hints where possible
 - Create language copy files
 - React Context: retake tutorial
