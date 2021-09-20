@@ -25,7 +25,7 @@ export default function NavBar() {
 
                     </div>
                 </div>
-                <p className="title">eric chao</p>
+                <p id="name-title">eric chao</p>
                 <hr id="header-line" />
             </div>
         </header>

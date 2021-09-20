@@ -37,7 +37,7 @@ export default function NavMenu(props: any) {
             </span>
 
             <div id="nav-menu" className="nav-menu">
-                {pages.map((page, index) => <Link key={index} title={page} className="nav-link" onClick={() => handleClick(page)}
+                {pages.map((page, index) => <Link key={index} title={page} className="navmenu-link" onClick={() => handleClick(page)}
                     to={`/${page}`}>{page}</Link>)}
             </div>
         </div>

@@ -27,6 +27,11 @@ a:active {
   text-decoration: none;
 }
 
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -50,8 +55,8 @@ a:active {
   justify-content: center;
 }
 
-.title {
-  color: var(--color-grey);
+#name-title {
+  color: var(--color-black);
   font-weight:bold;
   font-size: 32px;
   margin-top: 6px;
@@ -162,7 +167,7 @@ a.nav-link::before {
 }
 
 .nav-menu {
-  height: 7em; /*unit should be related to number of pages*/
+  height: 8.5em; /*unit should be related to number of pages*/
   overflow: visible;
   transition: all 0.3s ease-out;
 }
@@ -185,6 +190,17 @@ a.nav-link::before {
   margin-left: 2px;
 }
 
+a.navmenu-link {
+  display: block;
+  color: #979797;
+  padding-bottom: 4px;
+}
+
+a.navmenu-link:hover {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
 
 /*=============RESPONSIVE============*/
 
@@ -196,4 +212,13 @@ a.nav-link::before {
   .main-container {
     width:100%;
   }
+
+  #nav-menu-span, #nav-menu {
+    font-size: 16px;
+  }
+
+  #nav-menu a {
+    margin-bottom: 2px;
+  }
+
 }
