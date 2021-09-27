@@ -1,7 +1,19 @@
 - Write Hook to fetch json according to language
 - Start english page json for home
+- Decide where will profile banner go
 - project presentation card component
 - add spinner icon for Suspense
 - Add typing hints where possible
 - Create language copy files
 - React Context: retake tutorial
+
+
+WORKS TO INCLUDE
+- GEEB
+
+- EMAUS
+
+- Sync Barrier (no image)
+
+- Socrates
+
