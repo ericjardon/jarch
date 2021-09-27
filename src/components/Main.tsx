@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Index from './pages/Index'
-import Home from './pages/Home'
+import Home from './pages/Home';
 
 export default function Main() {
 

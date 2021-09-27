@@ -1,3 +1,4 @@
+- Write Hook to fetch json according to language
 - Start english page json for home
 - project presentation card component
 - add spinner icon for Suspense

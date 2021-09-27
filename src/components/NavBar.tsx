@@ -20,13 +20,6 @@ export default function NavBar(props: NavBarProps) {
                     <NavMenu pages={pages}/>
                 )}
 
-                <div id="profile-block">
-                    <div className="profile-img">
-
-                    </div>
-                </div>
-                <p id="name-title">eric chao</p>
-                <hr id="header-line" />
             </div>
         </header>
     )

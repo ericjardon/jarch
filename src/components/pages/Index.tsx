@@ -5,6 +5,16 @@ import styles from './Index.module.css'
 export default function Index() {
     return (
         <div className={styles.container}>
+            <div id="me">
+            <div id="profile-block">
+                    <div className="profile-img">
+
+                    </div>
+                </div>
+                <p id="name-title">eric chao</p>
+                <hr id="header-line" />
+            </div>
+
             <span className={styles.heading}><b className={styles.home}>Hello,</b> world!</span>
             <p className={styles.home}>I am an aspiring software engineer from mexico city. 
                 <br/><br/> 

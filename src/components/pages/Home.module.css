@@ -1,0 +1,7 @@
+.profileBannerWrapper {
+    padding: 48px 32px;
+}
+
+.profileBanner {
+    width: calc(100% - 64px);
+}
