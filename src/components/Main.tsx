@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import Index from './pages/Index'
 import Home from './pages/Home'
 
 export default function Main() {
@@ -13,10 +14,10 @@ export default function Main() {
             <NavBar pages={pages} />
             <Switch>
                 <Route exact path ="/">
-                    <Redirect to="/jarch"/>
+                    <Redirect to="/jarch/"/>
                 </Route>
                 <Route exact path ="/jarch/home" render={() => <Home/>}/>
-                <Route exact path ="/jarch" render={() => <p>Hello World</p>}/>
+                <Route exact path ="/jarch" render={() => <Index/>}/>
                 <Route exact path ="/jarch/works" render={() => <p>Works</p>}/>
                 <Route exact path ="/jarch/blog" render={() => <p>Blog</p>}/>
                 <Route exact path ="/jarch/stuff" render={() => <p>Stuff</p>}/>
